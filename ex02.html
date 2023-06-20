@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-weight: 700;
+            font-size: 100px;
+            color: cadetblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <input type="text" id="chat"></input>
+    <button id="btn">hello</button>
+    <p id="answer"></p>
+    </center>
+    <script>
+        function answering(){
+            let theName = document.getElementById('chat').value;
+            let theAnswer = document.getElementById('answer');
+            theAnswer.innerHTML = `Hi, ${theName}:))`;
+        }
+
+        let button = document.getElementById('btn');
+        button.addEventListener('click', answering);
+    </script>
+</body>
+</html>
